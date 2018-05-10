@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Todo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Todo from './components/Todo.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Todo
   }
 }
 </script>
 
 <style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #ECF0F1;
+}
+button{
+  width: 40px;
+  height: 40px;
+}
+svg{
+  width: 30px;
+  height: 30px;
 }
 </style>
