@@ -36,7 +36,7 @@ export default {
     margin-top: 20%;
 }
 .active{
-    color: #ccc;
+    color: red;
     text-decoration: line-through;
 }
 </style>
